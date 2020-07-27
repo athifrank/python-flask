@@ -26,7 +26,7 @@
         <a class="nav-link" href="#">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {{if data=='about' active}}" href="{{url_for('about')}}">About</a>
+        <a class="nav-link {% if data=='about' %}{{'active'}}{% endif %}" href="{{url_for('about')}}">About</a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="#">Contacts</a>
